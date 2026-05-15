@@ -1,0 +1,6 @@
+import { describePluginRegistrationContract } from "autopus/plugin-sdk/plugin-test-contracts";
+
+describePluginRegistrationContract({
+  pluginId: "lmstudio",
+  providerIds: ["lmstudio"],
+});

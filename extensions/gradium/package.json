@@ -1,0 +1,15 @@
+{
+  "name": "@autopus/gradium-speech",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus Gradium speech plugin",
+  "type": "module",
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

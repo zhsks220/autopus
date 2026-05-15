@@ -1,0 +1,15 @@
+{
+  "name": "@autopus/chutes-provider",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus Chutes.ai provider plugin",
+  "type": "module",
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
