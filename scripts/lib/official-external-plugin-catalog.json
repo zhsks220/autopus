@@ -1,0 +1,191 @@
+{
+  "entries": [
+    {
+      "name": "@autopus/acpx",
+      "description": "Autopus ACP runtime backend",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "acpx",
+          "label": "ACPX Runtime"
+        },
+        "install": {
+          "npmSpec": "@autopus/acpx",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.25"
+        }
+      }
+    },
+    {
+      "name": "@autopus/brave-plugin",
+      "description": "Autopus Brave plugin",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "brave",
+          "label": "Brave"
+        },
+        "webSearchProviders": [
+          {
+            "id": "brave",
+            "label": "Brave Search",
+            "hint": "Brave Search web results.",
+            "onboardingScopes": ["text-inference"],
+            "credentialLabel": "Brave Search API key",
+            "envVars": ["BRAVE_API_KEY"],
+            "placeholder": "BSA...",
+            "signupUrl": "https://api-dashboard.search.brave.com/app/keys",
+            "docsUrl": "https://docs.autopus.ai/tools/brave-search",
+            "credentialPath": "plugins.entries.brave.config.webSearch.apiKey",
+            "autoDetectOrder": 10
+          }
+        ],
+        "install": {
+          "npmSpec": "@autopus/brave-plugin",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.10"
+        }
+      }
+    },
+    {
+      "name": "@autopus/diagnostics-otel",
+      "description": "Autopus diagnostics OpenTelemetry exporter",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "diagnostics-otel",
+          "label": "Diagnostics OpenTelemetry"
+        },
+        "install": {
+          "clawhubSpec": "clawhub:@autopus/diagnostics-otel",
+          "npmSpec": "@autopus/diagnostics-otel",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.25"
+        }
+      }
+    },
+    {
+      "name": "@autopus/diagnostics-prometheus",
+      "description": "Autopus diagnostics Prometheus exporter",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "diagnostics-prometheus",
+          "label": "Diagnostics Prometheus"
+        },
+        "install": {
+          "clawhubSpec": "clawhub:@autopus/diagnostics-prometheus",
+          "npmSpec": "@autopus/diagnostics-prometheus",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.25"
+        }
+      }
+    },
+    {
+      "name": "@autopus/diffs",
+      "description": "Autopus diff viewer plugin",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "diffs",
+          "label": "Diffs"
+        },
+        "install": {
+          "npmSpec": "@autopus/diffs",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.30"
+        }
+      }
+    },
+    {
+      "name": "@autopus/google-meet",
+      "description": "Autopus Google Meet participant plugin",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "google-meet",
+          "label": "Google Meet"
+        },
+        "install": {
+          "npmSpec": "@autopus/google-meet",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.20"
+        }
+      }
+    },
+    {
+      "name": "@autopus/octopus",
+      "description": "Octopus workflow tool plugin (typed pipelines + resumable approvals)",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "octopus",
+          "label": "Octopus"
+        },
+        "install": {
+          "npmSpec": "@autopus/octopus",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.25"
+        }
+      }
+    },
+    {
+      "name": "@autopus/memory-lancedb",
+      "description": "Autopus LanceDB-backed long-term memory plugin with auto-recall/capture",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "memory-lancedb",
+          "label": "Memory LanceDB"
+        },
+        "install": {
+          "npmSpec": "@autopus/memory-lancedb",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.10"
+        }
+      }
+    },
+    {
+      "name": "@autopus/openshell-sandbox",
+      "description": "Autopus OpenShell sandbox backend",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "openshell",
+          "label": "OpenShell Sandbox"
+        },
+        "install": {
+          "npmSpec": "@autopus/openshell-sandbox",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.5.12-beta.1"
+        }
+      }
+    },
+    {
+      "name": "@autopus/voice-call",
+      "description": "Autopus voice-call plugin",
+      "source": "official",
+      "kind": "plugin",
+      "autopus": {
+        "plugin": {
+          "id": "voice-call",
+          "label": "Voice Call"
+        },
+        "install": {
+          "npmSpec": "@autopus/voice-call",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.4.10"
+        }
+      }
+    }
+  ]
+}

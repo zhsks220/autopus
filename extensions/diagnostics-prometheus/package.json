@@ -1,0 +1,34 @@
+{
+  "name": "@autopus/diagnostics-prometheus",
+  "version": "2026.5.12-beta.1",
+  "description": "Autopus diagnostics Prometheus exporter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autopus/autopus"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "clawhubSpec": "clawhub:@autopus/diagnostics-prometheus",
+      "npmSpec": "@autopus/diagnostics-prometheus",
+      "defaultChoice": "npm",
+      "minHostVersion": ">=2026.4.25"
+    },
+    "compat": {
+      "pluginApi": ">=2026.5.12-beta.1"
+    },
+    "build": {
+      "autopusVersion": "2026.5.12-beta.1"
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": true
+    }
+  }
+}
