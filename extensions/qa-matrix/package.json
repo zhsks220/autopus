@@ -1,0 +1,31 @@
+{
+  "name": "@autopus/qa-matrix",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus Matrix QA runner plugin",
+  "type": "module",
+  "dependencies": {
+    "undici": "8.2.0"
+  },
+  "devDependencies": {
+    "@autopus/matrix": "workspace:*",
+    "@autopus/plugin-sdk": "workspace:*",
+    "autopus": "workspace:*"
+  },
+  "peerDependencies": {
+    "autopus": ">=2026.5.12-beta.1"
+  },
+  "peerDependenciesMeta": {
+    "autopus": {
+      "optional": true
+    }
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.5.12-beta.1"
+    }
+  }
+}

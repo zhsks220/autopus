@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autopus Debugging"
+  short_description: "Debug model, tool, stream, and live behavior"
+  default_prompt: "Use $autopus-debugging to identify the right Autopus debug boundary, turn on targeted logs, and choose the narrowest local or Octopusbox proof."

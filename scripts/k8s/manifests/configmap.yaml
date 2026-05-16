@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: autopus-config
+  labels:
+    app: autopus
+data:
+  autopus.json: |
+    {
+      "gateway": {
+        "mode": "local",
+        "bind": "loopback",
+        "port": 18789,
+        "auth": {
+          "mode": "token"
+        },
+        "controlUi": {
+          "enabled": true
+        }
+      },
+      "agents": {
+        "defaults": {
+          "workspace": "~/.autopus/workspace"
+        },
+        "list": [
+          {
+            "id": "default",
+            "name": "Autopus Assistant",
+            "workspace": "~/.autopus/workspace"
+          }
+        ]
+      },
+      "cron": { "enabled": false }
+    }
+  AGENTS.md: |
+    # Autopus Assistant
+
+    You are a helpful AI assistant running in Kubernetes.
