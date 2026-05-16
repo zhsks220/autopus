@@ -1,0 +1,19 @@
+{
+  "name": "@autopus/ollama-provider",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus Ollama provider plugin",
+  "type": "module",
+  "dependencies": {
+    "@earendil-works/pi-ai": "0.74.0",
+    "typebox": "1.1.38"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

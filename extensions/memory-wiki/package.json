@@ -1,0 +1,29 @@
+{
+  "name": "@autopus/memory-wiki",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus persistent wiki plugin",
+  "type": "module",
+  "dependencies": {
+    "typebox": "1.1.38",
+    "yaml": "2.9.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*",
+    "autopus": "workspace:*"
+  },
+  "peerDependencies": {
+    "autopus": ">=2026.5.12-beta.1"
+  },
+  "peerDependenciesMeta": {
+    "autopus": {
+      "optional": true
+    }
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
