@@ -1,0 +1,40 @@
+{
+  "name": "@autopus/amazon-bedrock-provider",
+  "version": "2026.5.12-beta.1",
+  "description": "Autopus Amazon Bedrock provider plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autopus/autopus"
+  },
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-bedrock": "3.1045.0",
+    "@aws-sdk/client-bedrock-runtime": "3.1045.0",
+    "@aws-sdk/credential-provider-node": "3.972.39",
+    "@earendil-works/pi-ai": "0.74.0",
+    "@smithy/shared-ini-file-loader": "4.5.1"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "npmSpec": "@autopus/amazon-bedrock-provider",
+      "defaultChoice": "npm",
+      "minHostVersion": ">=2026.5.12-beta.1"
+    },
+    "compat": {
+      "pluginApi": ">=2026.5.12-beta.1"
+    },
+    "build": {
+      "autopusVersion": "2026.5.12-beta.1",
+      "bundledDist": false
+    },
+    "release": {
+      "publishToNpm": true
+    }
+  }
+}

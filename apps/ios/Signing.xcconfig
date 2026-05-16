@@ -1,0 +1,22 @@
+// Default signing values for shared/repo builds.
+// Auto-selected local team overrides live in .local-signing.xcconfig (git-ignored).
+// Manual local overrides can go in LocalSigning.xcconfig (git-ignored).
+
+#include "Config/Version.xcconfig"
+
+AUTOPUS_CODE_SIGN_STYLE = Manual
+AUTOPUS_DEVELOPMENT_TEAM = Y5PE65HELJ
+
+AUTOPUS_APP_BUNDLE_ID = ai.autopus.client
+AUTOPUS_SHARE_BUNDLE_ID = ai.autopus.client.share
+AUTOPUS_WATCH_APP_BUNDLE_ID = ai.autopus.client.watchkitapp
+AUTOPUS_WATCH_EXTENSION_BUNDLE_ID = ai.autopus.client.watchkitapp.extension
+AUTOPUS_ACTIVITY_WIDGET_BUNDLE_ID = ai.autopus.client.activitywidget
+
+AUTOPUS_APP_PROFILE = ai.autopus.client Development
+AUTOPUS_SHARE_PROFILE = ai.autopus.client.share Development
+
+// Keep local includes after defaults: xcconfig is evaluated top-to-bottom,
+// so later assignments in local files override the defaults above.
+#include? ".local-signing.xcconfig"
+#include? "LocalSigning.xcconfig"

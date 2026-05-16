@@ -1,0 +1,117 @@
+{
+  "entries": [
+    {
+      "name": "@autopus/amazon-bedrock-provider",
+      "description": "Autopus Amazon Bedrock provider plugin",
+      "source": "official",
+      "kind": "provider",
+      "autopus": {
+        "plugin": {
+          "id": "amazon-bedrock",
+          "label": "Amazon Bedrock"
+        },
+        "providers": [
+          {
+            "id": "amazon-bedrock",
+            "name": "Amazon Bedrock",
+            "docs": "/providers/bedrock",
+            "categories": ["cloud", "llm"]
+          }
+        ],
+        "install": {
+          "npmSpec": "@autopus/amazon-bedrock-provider",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.5.12-beta.1"
+        }
+      }
+    },
+    {
+      "name": "@autopus/amazon-bedrock-mantle-provider",
+      "description": "Autopus Amazon Bedrock Mantle provider plugin",
+      "source": "official",
+      "kind": "provider",
+      "autopus": {
+        "plugin": {
+          "id": "amazon-bedrock-mantle",
+          "label": "Amazon Bedrock Mantle"
+        },
+        "providers": [
+          {
+            "id": "amazon-bedrock-mantle",
+            "name": "Amazon Bedrock Mantle",
+            "docs": "/providers/bedrock-mantle",
+            "categories": ["cloud", "llm"]
+          }
+        ],
+        "install": {
+          "npmSpec": "@autopus/amazon-bedrock-mantle-provider",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.5.12-beta.1"
+        }
+      }
+    },
+    {
+      "name": "@autopus/anthropic-vertex-provider",
+      "description": "Autopus Anthropic Vertex provider plugin",
+      "source": "official",
+      "kind": "provider",
+      "autopus": {
+        "plugin": {
+          "id": "anthropic-vertex",
+          "label": "Anthropic Vertex"
+        },
+        "providers": [
+          {
+            "id": "anthropic-vertex",
+            "name": "Anthropic Vertex",
+            "docs": "/providers/models",
+            "categories": ["cloud", "llm"]
+          }
+        ],
+        "install": {
+          "npmSpec": "@autopus/anthropic-vertex-provider",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.5.12-beta.1"
+        }
+      }
+    },
+    {
+      "name": "@autopus/codex",
+      "description": "Autopus Codex harness and model provider plugin",
+      "source": "official",
+      "kind": "provider",
+      "autopus": {
+        "plugin": {
+          "id": "codex",
+          "label": "Codex"
+        },
+        "providers": [
+          {
+            "id": "codex",
+            "name": "Codex",
+            "docs": "/providers/models",
+            "categories": ["cloud", "llm"],
+            "authChoices": [
+              {
+                "method": "app-server",
+                "choiceId": "codex",
+                "choiceLabel": "Codex app-server",
+                "choiceHint": "Use the Codex app-server runtime and managed model catalog.",
+                "assistantPriority": -40,
+                "groupId": "codex",
+                "groupLabel": "Codex",
+                "groupHint": "Codex app-server model provider",
+                "onboardingScopes": ["text-inference"]
+              }
+            ]
+          }
+        ],
+        "install": {
+          "npmSpec": "@autopus/codex",
+          "defaultChoice": "npm",
+          "minHostVersion": ">=2026.5.1-beta.1"
+        }
+      }
+    }
+  ]
+}
