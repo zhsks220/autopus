@@ -1,0 +1,23 @@
+---
+summary: "Adds Arcee model provider support to Autopus."
+read_when:
+  - You are installing, configuring, or auditing the arcee plugin
+title: "Arcee plugin"
+---
+
+# Arcee plugin
+
+Adds Arcee model provider support to Autopus.
+
+## Distribution
+
+- Package: `@autopus/arcee-provider`
+- Install route: included in Autopus
+
+## Surface
+
+providers: arcee
+
+## Related docs
+
+- [arcee](/providers/arcee)

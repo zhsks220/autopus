@@ -1,0 +1,19 @@
+{
+  "name": "@autopus/openai-provider",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus OpenAI provider plugins",
+  "type": "module",
+  "dependencies": {
+    "@earendil-works/pi-ai": "0.74.0",
+    "ws": "8.20.0"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
