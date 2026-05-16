@@ -1,0 +1,51 @@
+import Foundation
+
+// Stable identifier used for both the macOS LaunchAgent label and Nix-managed defaults suite.
+// nix-autopus writes app defaults into this suite to survive app bundle identifier churn.
+let launchdLabel = "ai.autopus.mac"
+let gatewayLaunchdLabel = "ai.autopus.gateway"
+let onboardingVersionKey = "autopus.onboardingVersion"
+let onboardingSeenKey = "autopus.onboardingSeen"
+let currentOnboardingVersion = 7
+let pauseDefaultsKey = "autopus.pauseEnabled"
+let iconAnimationsEnabledKey = "autopus.iconAnimationsEnabled"
+let swabbleEnabledKey = "autopus.swabbleEnabled"
+let swabbleTriggersKey = "autopus.swabbleTriggers"
+let voiceWakeTriggerChimeKey = "autopus.voiceWakeTriggerChime"
+let voiceWakeSendChimeKey = "autopus.voiceWakeSendChime"
+let showDockIconKey = "autopus.showDockIcon"
+let defaultVoiceWakeTriggers = ["autopus"]
+let voiceWakeMaxWords = 32
+let voiceWakeMaxWordLength = 64
+let voiceWakeMicKey = "autopus.voiceWakeMicID"
+let voiceWakeMicNameKey = "autopus.voiceWakeMicName"
+let voiceWakeLocaleKey = "autopus.voiceWakeLocaleID"
+let voiceWakeAdditionalLocalesKey = "autopus.voiceWakeAdditionalLocaleIDs"
+let voicePushToTalkEnabledKey = "autopus.voicePushToTalkEnabled"
+let voiceWakeTriggersTalkModeKey = "autopus.voiceWakeTriggersTalkMode"
+let talkEnabledKey = "autopus.talkEnabled"
+let talkPhaseSoundsEnabledKey = "autopus.talkPhaseSoundsEnabled"
+let talkShiftToStopEnabledKey = "autopus.talkShiftToStopEnabled"
+let iconOverrideKey = "autopus.iconOverride"
+let connectionModeKey = "autopus.connectionMode"
+let remoteTargetKey = "autopus.remoteTarget"
+let remoteIdentityKey = "autopus.remoteIdentity"
+let remoteProjectRootKey = "autopus.remoteProjectRoot"
+let remoteCliPathKey = "autopus.remoteCliPath"
+let canvasEnabledKey = "autopus.canvasEnabled"
+let cameraEnabledKey = "autopus.cameraEnabled"
+let systemRunPolicyKey = "autopus.systemRunPolicy"
+let systemRunAllowlistKey = "autopus.systemRunAllowlist"
+let systemRunEnabledKey = "autopus.systemRunEnabled"
+let locationModeKey = "autopus.locationMode"
+let locationPreciseKey = "autopus.locationPreciseEnabled"
+let peekabooBridgeEnabledKey = "autopus.peekabooBridgeEnabled"
+let deepLinkKeyKey = "autopus.deepLinkKey"
+let modelCatalogPathKey = "autopus.modelCatalogPath"
+let modelCatalogReloadKey = "autopus.modelCatalogReload"
+let cliInstallPromptedVersionKey = "autopus.cliInstallPromptedVersion"
+let heartbeatsEnabledKey = "autopus.heartbeatsEnabled"
+let debugPaneEnabledKey = "autopus.debugPaneEnabled"
+let debugFileLogEnabledKey = "autopus.debug.fileLogEnabled"
+let appLogLevelKey = "autopus.debug.appLogLevel"
+let voiceWakeSupported: Bool = ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 26

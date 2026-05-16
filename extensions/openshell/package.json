@@ -1,0 +1,38 @@
+{
+  "name": "@autopus/openshell-sandbox",
+  "version": "2026.5.12-beta.1",
+  "description": "Autopus OpenShell sandbox backend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autopus/autopus"
+  },
+  "type": "module",
+  "dependencies": {
+    "openshell": "0.1.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "npmSpec": "@autopus/openshell-sandbox",
+      "defaultChoice": "npm",
+      "minHostVersion": ">=2026.5.12-beta.1"
+    },
+    "compat": {
+      "pluginApi": ">=2026.5.12-beta.1"
+    },
+    "build": {
+      "autopusVersion": "2026.5.12-beta.1",
+      "bundledDist": false
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": true
+    }
+  }
+}

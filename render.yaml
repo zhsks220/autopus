@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: autopus
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: AUTOPUS_GATEWAY_PORT
+        value: "8080"
+      - key: AUTOPUS_STATE_DIR
+        value: /data/.autopus
+      - key: AUTOPUS_WORKSPACE_DIR
+        value: /data/workspace
+      - key: AUTOPUS_GATEWAY_TOKEN
+        generateValue: true
+    disk:
+      name: autopus-data
+      mountPath: /data
+      sizeGB: 1

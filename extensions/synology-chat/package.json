@@ -1,0 +1,46 @@
+{
+  "name": "@autopus/synology-chat",
+  "version": "2026.5.12-beta.1",
+  "description": "Synology Chat channel plugin for Autopus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autopus/autopus"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "setupEntry": "./setup-entry.ts",
+    "channel": {
+      "id": "synology-chat",
+      "label": "Synology Chat",
+      "selectionLabel": "Synology Chat (Webhook)",
+      "docsPath": "/channels/synology-chat",
+      "docsLabel": "synology-chat",
+      "blurb": "Connect your Synology NAS Chat to Autopus with full agent capabilities.",
+      "order": 90
+    },
+    "install": {
+      "npmSpec": "@autopus/synology-chat",
+      "defaultChoice": "npm",
+      "minHostVersion": ">=2026.4.10"
+    },
+    "compat": {
+      "pluginApi": ">=2026.5.12-beta.1"
+    },
+    "build": {
+      "autopusVersion": "2026.5.12-beta.1"
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": true
+    }
+  },
+  "dependencies": {
+    "zod": "4.4.3"
+  }
+}

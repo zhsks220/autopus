@@ -1,0 +1,18 @@
+{
+  "name": "@autopus/microsoft-speech",
+  "version": "2026.5.12-beta.1",
+  "private": true,
+  "description": "Autopus Microsoft speech plugin",
+  "type": "module",
+  "dependencies": {
+    "node-edge-tts": "1.2.10"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*"
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
