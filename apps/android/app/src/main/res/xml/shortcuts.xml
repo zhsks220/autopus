@@ -1,0 +1,17 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <capability
+        android:name="custom.actions.intent.ASK_AUTOPUS"
+        app:queryPatterns="@array/ask_autopus_query_patterns">
+        <intent
+            android:action="ai.autopus.app.action.ASK_AUTOPUS"
+            android:targetPackage="ai.autopus.app"
+            android:targetClass="ai.autopus.app.MainActivity">
+            <parameter
+                android:name="prompt"
+                android:key="prompt"
+                android:mimeType="https://schema.org/Text"
+                android:required="true" />
+        </intent>
+    </capability>
+</shortcuts>

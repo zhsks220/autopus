@@ -1,0 +1,44 @@
+{
+  "name": "@autopus/mattermost",
+  "version": "2026.5.12-beta.1",
+  "description": "Autopus Mattermost channel plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autopus/autopus"
+  },
+  "type": "module",
+  "dependencies": {
+    "ws": "8.20.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@autopus/plugin-sdk": "workspace:*",
+    "autopus": "workspace:*"
+  },
+  "peerDependencies": {
+    "autopus": ">=2026.5.12-beta.1"
+  },
+  "peerDependenciesMeta": {
+    "autopus": {
+      "optional": true
+    }
+  },
+  "autopus": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "setupEntry": "./setup-entry.ts",
+    "channel": {
+      "id": "mattermost",
+      "label": "Mattermost",
+      "selectionLabel": "Mattermost (plugin)",
+      "docsPath": "/channels/mattermost",
+      "docsLabel": "mattermost",
+      "blurb": "self-hosted Slack-style chat; install the plugin to enable.",
+      "order": 65
+    },
+    "install": {
+      "minHostVersion": ">=2026.4.10"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="ask_autopus_query_patterns">
+        <item>ask Autopus $prompt</item>
+        <item>tell Autopus to $prompt</item>
+        <item>open Autopus and ask $prompt</item>
+    </string-array>
+</resources>
